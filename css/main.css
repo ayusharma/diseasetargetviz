@@ -1,6 +1,6 @@
 /*
  * Add your css files in this folder
- * 
+ *
  * More infos:
  * - You need to run `npm run css` to refresh your CSS settings
  * - Parcelify supports a watch mode - try `parcelify -w ./ build/bundle.css`
@@ -9,12 +9,3 @@
  *
  * @see: https://github.com/rotundasoftware/parcelify
  */
-body div:first-child{
-    background-color: grey;
-}
-body div:first-child:after{
-    content: "You can modify the style in the css folder";
-     white-space:pre; 
-     background-color: #fff;
-     display: block;
-}

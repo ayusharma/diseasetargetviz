@@ -4,20 +4,36 @@
 	<title></title>
 	<!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-<!-- Latest compiled and minified JavaScript -->
-
 
 </head>
 <body>
-	<div class="row">
-		<div class="col-md-8" id="rootDiv">
-
-		</div>
+	<div class="container">
+	<div class="row" style="margin-top:30px">
 		<div class="col-md-4" id="filters">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h3 class="panel-title">Filters</h3>
+				</div>
+				<div class="panel-body" id="filter">
 
+				</div>
+			</div>
 		</div>
+
+		<div class="col-md-8" >
+			<div class="panel panel-default">
+			  <div class="panel-heading">
+			    <h3 class="panel-title">visualizaton</h3>
+			  </div>
+			  <div class="panel-body" id="rootDiv">
+
+			  </div>
+			</div>
+		</div>
+
 	</div>
-  <div ></div>
+</div>
+
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js" type="text/javascript"></script>
 
@@ -32,8 +48,14 @@
 				"id":"rootDiv"
 			},
 		"filters":{
-				"id":"filters"
-		}
+				"id":"filter"
+		},
+		"disease" :[
+			{"name":"Familial cold urticaria","code":"Orphanet_47045"},
+			// {"name":"Asthma","code":"EFO_0000270"},
+			// {"name":"Heart Failure","code":"EFO_0003144"},
+			{"name":"Blood Pressure","code":"EFO_0004325"},
+		]
   }
 
 	app(config);
