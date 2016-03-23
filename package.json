@@ -31,7 +31,8 @@
   },
   "dependencies": {
     "bootstrap": "^3.3.6",
-    "cttv.api": "0.0.2"
+    "cttv.api": "0.0.2",
+    "es6-promise": "^3.1.2"
   },
   "devDependencies": {
     "bootstrap": "^3.3.6",
