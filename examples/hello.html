@@ -2,17 +2,37 @@
 <html>
 <head>
 	<title></title>
+	<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+<!-- Latest compiled and minified JavaScript -->
+
+
 </head>
 <body>
-  <div id="rootDiv"></div>
+	<div class="row">
+		<div class="col-md-8" id="rootDiv">
+
+		</div>
+		<div class="col-md-4" id="filters">
+
+		</div>
+	</div>
+  <div ></div>
 </body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js" type="text/javascript"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 <script src="../build/diseasetargetviz.js" type="text/javascript"></script>
 <script type="text/javascript">
 	var app = require("diseasetargetviz");
   var config  = {
-    "id":"rootDiv",
-    "width":300,
-    "height":200
+		"vislualization":
+			{
+				"id":"rootDiv"
+			},
+		"filters":{
+				"id":"filters"
+		},
   }
 	app(config);
 </script>
