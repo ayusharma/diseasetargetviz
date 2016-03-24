@@ -6,7 +6,7 @@
 
 ## Installation
 
-From Git
+From Git:
 
 ````bash
 git clone https://github.com/ayusharma/diseasetargetviz
@@ -15,9 +15,11 @@ npm install
 npm run build-browser
 ````
 
-Getting Started
-Install the module with: `npm install diseasetargetviz`
+
+Install the module with NPM: `npm install diseasetargetviz`
+
 HTML :
+
 ```html
     <!-- Div for Visualization -->
     <div id="rootDiv"> </div>
@@ -28,7 +30,9 @@ HTML :
     <!-- Div for pathway -->
     <div id="pathway"> </div>
 ```
+
 JS :
+
 ```javascript
 //Initalise the application
 var app = require('diseasetargetviz');
@@ -64,6 +68,7 @@ var config  = {
 ```
 
 ## Run it locally
+
 ```bash
 npm run w
 ```
