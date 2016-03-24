@@ -1,31 +1,66 @@
-# diseaseTargetViz
 
-[![NPM version](http://img.shields.io/npm/v/diseasetargetviz.svg)](https://www.npmjs.org/package/diseasetargetviz) 
 
-> 
+[![NPM version](http://img.shields.io/npm/v/diseasetargetviz.svg)](https://www.npmjs.org/package/diseasetargetviz)
 
-## Getting Started
+>
+
+## Installation
+
+From Git
+
+````bash
+git clone https://github.com/ayusharma/diseasetargetviz
+cd diseasetargetviz
+npm install
+npm run build-browser
+````
+
+Getting Started
 Install the module with: `npm install diseasetargetviz`
+HTML :
+```html
+    <!-- Div for Visualization -->
+    <div id="rootDiv"> </div>
 
-```javascript
-var diseasetargetviz = require('diseasetargetviz');
-diseasetargetviz.hello("biojs"); // "hello biojs"
+    <!-- Div for Filters -->
+    <div id="filter"> </div>
+
+    <!-- Div for pathway -->
+    <div id="pathway"> </div>
 ```
-
-## Documentation
-
-#### .hello(name)
-
-**Parameter**: `name`
-**Type**: `String`
-**Example**: `biojs`
-
-The 'hello' method is responsible for showing a name.
-
-How to use this method
-
+JS :
 ```javascript
-diseasetargetviz.hello('biojs'); // "hello biojs"
+//Initalise the application
+var app = require('diseasetargetviz');
+
+//define confing in JSON.
+var config  = {
+  "dom":{
+      "viz":"rootDiv",      //Inialize the rootDiv div
+      "filter":"filter",    //Inialize the filter div
+      "pathway":"pathway"   //Inialize the patway div
+    },
+  "disease" :[
+    {"name":"Familial cold urticaria","code":"Orphanet_47045"},
+    {"name":"Asthma","code":"EFO_0000270"},
+    {"name":"Heart Failure","code":"EFO_0003144"},
+    {"name":"Blood Pressure","code":"EFO_0004325"},
+  ],
+  "datatypes":[]
+  //Available Datatypes :
+  //"genetic_association"
+  //"somatic_mutation"
+  //"known_drug"
+  //"rna_expression"
+  //"affected_pathway"
+  //"animal_model"
+  //"literature"
+  //You can select a datatype at start.
+
+}
+
+//calling the app variable
+	app(config);
 ```
 
 ## Contributing
@@ -36,7 +71,7 @@ All contributions are welcome.
 
 If you have any problem or suggestion please open an issue [here](https://github.com/ayushsharma/diseasetargetviz/issues).
 
-## License 
+## License
 
 The MIT License
 
