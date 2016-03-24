@@ -67,6 +67,7 @@ var config  = {
 ```bash
 npm run w
 ```
+and visit : http://localhost:9090/examples/hello.html
 
 ## Contributing
 
