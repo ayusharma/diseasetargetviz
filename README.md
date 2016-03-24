@@ -63,6 +63,11 @@ var config  = {
 	app(config);
 ```
 
+## Run it locally
+```bash
+npm run w
+```
+
 ## Contributing
 
 All contributions are welcome.
