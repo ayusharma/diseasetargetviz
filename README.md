@@ -23,6 +23,7 @@ HTML :
 
     <!-- Div for disease  -->
     <div id="disease"> </div>
+    
     <!-- Div for Visualization -->
     <div id="rootDiv"> </div>
 
@@ -51,7 +52,7 @@ var config  = {
     {"name":"Familial cold urticaria","code":"Orphanet_47045","value":"true"},
 		{"name":"Asthma","code":"EFO_0000270","value":"false"},
 		{"name":"Heart Failure","code":"EFO_0003144","value":"false"},
-		{"name":"Blood Pressure","code":"EFO_0004325","value":"false"},
+		{"name":"Blood Pressure","code":"EFO_0004325","value":"false"}
   ],
   "datatypes":[]
   //Available Datatypes :
