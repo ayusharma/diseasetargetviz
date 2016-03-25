@@ -21,7 +21,7 @@ HTML :
 
 ```html
 
-    <!-- Div for Visualization -->
+    <!-- Div for disease  -->
     <div id="disease"> </div>
     <!-- Div for Visualization -->
     <div id="rootDiv"> </div>
