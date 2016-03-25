@@ -2,7 +2,6 @@
 
 [![NPM version](http://img.shields.io/npm/v/diseasetargetviz.svg)](https://www.npmjs.org/package/diseasetargetviz)
 
->
 
 ## Installation
 
