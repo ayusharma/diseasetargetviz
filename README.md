@@ -20,6 +20,9 @@ Install the module with NPM: `npm install diseasetargetviz`
 HTML :
 
 ```html
+
+    <!-- Div for Visualization -->
+    <div id="disease"> </div>
     <!-- Div for Visualization -->
     <div id="rootDiv"> </div>
 
@@ -41,13 +44,14 @@ var config  = {
   "dom":{
       "viz":"rootDiv",      //Inialize the rootDiv div
       "filter":"filter",    //Inialize the filter div
-      "pathway":"pathway"   //Inialize the patway div
+      "pathway":"pathway",  //Inialize the patway div
+      "disease":"disease"   //Inialize the disease div
     },
   "disease" :[
-    {"name":"Familial cold urticaria","code":"Orphanet_47045"},
-    {"name":"Asthma","code":"EFO_0000270"},
-    {"name":"Heart Failure","code":"EFO_0003144"},
-    {"name":"Blood Pressure","code":"EFO_0004325"},
+    {"name":"Familial cold urticaria","code":"Orphanet_47045","value":"true"},
+		{"name":"Asthma","code":"EFO_0000270","value":"false"},
+		{"name":"Heart Failure","code":"EFO_0003144","value":"false"},
+		{"name":"Blood Pressure","code":"EFO_0004325","value":"false"},
   ],
   "datatypes":[]
   //Available Datatypes :
