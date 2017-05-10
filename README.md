@@ -23,7 +23,7 @@ HTML :
 
     <!-- Div for disease  -->
     <div id="disease"> </div>
-    
+
     <!-- Div for Visualization -->
     <div id="rootDiv"> </div>
 
@@ -85,6 +85,11 @@ All contributions are welcome.
 ## Support
 
 If you have any problem or suggestion please open an issue [here](https://github.com/ayushsharma/diseasetargetviz/issues).
+
+## Screenshots
+<img src="screenshots/biojs1.png" width="200">
+<img src="screenshots/biojs2.png" width="200">
+<img src="screenshots/biojs3.png" width="200">
 
 ## License
 
